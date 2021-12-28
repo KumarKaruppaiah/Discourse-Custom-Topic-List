@@ -18,7 +18,7 @@
       </div>   
        <div class="count">
         <div>
-          {{topic.like_count + 'likes'}} || {{topic.reply_count + 'comments'}}
+          {{topic.like_count }} || {{topic.reply_count}}
         </div>
         <div>
         </div>
