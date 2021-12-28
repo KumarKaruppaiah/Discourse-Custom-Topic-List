@@ -1,6 +1,3 @@
-@import "common/foundation/variables";
-@import "variables";
-
 .d-header {
   height: 42px;
 }
@@ -22,7 +19,6 @@
 // Topic
 
 .topic-body {
-  @include fb-background();
   padding-right: 1em;
   width: calc(690px + (11px * 2) - 2em);
   border-radius: 0 4px 4px 0;
@@ -31,7 +27,7 @@
   border-bottom: 1px solid $border-color;
   &.highlighted {
     animation: none;
-    @include fb-background();
+   
   }
   @media screen and (max-width: 775px) {
     width: calc(100% - 60px);
@@ -39,7 +35,7 @@
 }
 
 .topic-avatar {
-  @include fb-background();
+ 
   padding-left: 1em;
   padding-bottom: 1.2em;
   border-radius: 4px 0 0 4px;
