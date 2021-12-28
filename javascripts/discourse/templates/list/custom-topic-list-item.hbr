@@ -10,7 +10,7 @@
   <span class='link-top-line'>
     <div class="byline">
       <div class="author">
-      {{{ log topic }}}
+      {{ this.get(topic)}}
         {{~raw-plugin-outlet name="topic-list-before-status"}}
         <a href="{{topic.posters.[0].user.userPath}}" data-user-card="{{topic.posters.[0].user.username}}">
           {{avatar topic.posters.[0].user imageSize='medium'}}
