@@ -16,7 +16,12 @@
       <div>
         <div class="topic-excerpt">
             {{raw "list/topic-excerpt" topic=topic}}
-        </div>  
+        </div>
+        {{#each topic.posters}}  
+          <div>
+           {{avatar this.user imageSize='medium'}}
+          </div>
+        {{/each}}
         <div>
           {{topic.posters.length}}
         </div>
