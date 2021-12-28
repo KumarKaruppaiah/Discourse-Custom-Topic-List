@@ -17,13 +17,13 @@
         <div class="topic-excerpt">
             {{raw "list/topic-excerpt" topic=topic}}
         </div>
-        {{#if topic.posters}}
-        {{#each topic.posters}}  
+      
+        {{#each topic.posters as |topic.posters|}}  
           <div>
            {{avatar this.user imageSize='medium'}}
           </div>
         {{/each}}
-        {{/if}}
+      
         <div>
           {{topic.posters.length}}
         </div>
