@@ -10,6 +10,7 @@
         {{~/if}}
       </div>
        <div class="name-and-date">
+         {{color-shade}}
          {{format-date topic.createdAt }}
       </div>
       {{~raw-plugin-outlet name="topic-list-after-title"}} 
