@@ -16,15 +16,7 @@
       <div>
         <div class="topic-excerpt">
             {{raw "list/topic-excerpt" topic=topic}}
-        </div>
-      
-        {{#each this}}  
-        
-          <div>
-           test
-          </div>
-          
-        {{/each}}
+        </div>      
       
         <div>
           {{topic.posters.length}}
