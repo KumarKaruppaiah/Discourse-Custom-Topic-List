@@ -17,7 +17,7 @@
         <div class="topic-excerpt">
             {{raw "list/topic-excerpt" topic=topic}}
         </div>
-        {{#if topic.posters.length>0}}
+        {{#if topic.posters}}
         {{#each topic.posters}}  
           <div>
            {{avatar this.user imageSize='medium'}}
