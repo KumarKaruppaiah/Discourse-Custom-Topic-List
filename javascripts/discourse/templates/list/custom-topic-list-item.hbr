@@ -18,10 +18,12 @@
             {{raw "list/topic-excerpt" topic=topic}}
         </div>
       
-        {{#each topic.posters}}  
+        {{#each this}}  
+         {{#posters}}
           <div>
-           {{avatar this.user imageSize='medium'}}
+           {{avatar user imageSize='medium'}}
           </div>
+           {{/posters}}
         {{/each}}
       
         <div>
