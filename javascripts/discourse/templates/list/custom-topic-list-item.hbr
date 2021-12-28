@@ -12,4 +12,8 @@
        <div class="name-and-date">
          {{format-date topic.createdAt }}
       </div>
+      {{~raw-plugin-outlet name="topic-list-after-title"}}   
+      <div class="topic-excerpt">
+        {{raw "list/topic-excerpt" topic=topic}}
+      </div>     
 </div>
