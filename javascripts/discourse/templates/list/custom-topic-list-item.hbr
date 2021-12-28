@@ -10,6 +10,6 @@
         {{~/if}}
       </div>
        <div class="name-and-date">
-         {{format-date topic.createdAt format="long"}}
+         {{format-date topic.createdAt }}
       </div>
 </div>
