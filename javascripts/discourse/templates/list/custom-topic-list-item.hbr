@@ -15,5 +15,12 @@
       {{~raw-plugin-outlet name="topic-list-after-title"}}   
       <div class="topic-excerpt">
         {{raw "list/topic-excerpt" topic=topic}}
+      </div>   
+       <div class="count">
+        <div>
+          {{topic.like_count + 'likes'}} || {{topic.reply_count + 'comments'}}
+        </div>
+        <div>
+        </div>
       </div>     
 </div>
